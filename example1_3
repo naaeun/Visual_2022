@@ -1,0 +1,13 @@
+using System;
+namespace chap1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string s = "Hello";
+            s += " world";
+            Console.WriteLine(s + "!");
+        }
+    }
+}
