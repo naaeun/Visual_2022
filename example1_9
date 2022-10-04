@@ -1,0 +1,17 @@
+using System;
+using System.Threading;
+class ThreadApp
+{
+    static void ThreadBody() //스레드 몸체
+    {
+        Console.WriteLine("In the Thread body ...");
+    }
+    public static void Main()
+    {
+        ThreadStart ts = new ThreadStart(ThreadBody); //델리게이트 객체 생성
+        Thread t = new Thread(ts); //스레드 객체 생성
+        Console.WriteLine("*** Start of Main");
+        t.Start(); //스레드 실행 시작
+        Console.WriteLine("*** End of Main");
+    }
+}
