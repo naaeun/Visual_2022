@@ -1,0 +1,11 @@
+using System;
+class IntegerConstantApp
+{
+    public static void Main()
+    {
+        Console.WriteLine("True or True = " + (true || true));
+        Console.WriteLine("True or False = " + (true || false));
+        Console.WriteLine("False or True = " + (false || true));
+        Console.WriteLine("False or False = " + (false || false)); 
+    }
+}
