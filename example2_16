@@ -1,0 +1,11 @@
+using System;
+class IntegerConstantApp
+{
+    public static void Main()
+    {
+        Console.WriteLine("True and Ture = " + (true&&true));
+        Console.WriteLine("True and False = " + (true && false));
+        Console.WriteLine("False and Ture = " + (false && true));
+        Console.WriteLine("False and False = " + (false && false));
+    }
+}
