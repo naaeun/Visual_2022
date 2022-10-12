@@ -1,0 +1,9 @@
+using System;
+class IntegerConstantApp
+{
+    public static void Main()
+    {
+        Console.WriteLine("10 << 2 = " + (10 << 2));
+        Console.WriteLine("10 >> 2 = " + (10 >> 2));
+    }
+}
