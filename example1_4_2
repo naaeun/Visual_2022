@@ -1,0 +1,31 @@
+using System;
+
+namespace chap1
+{
+    internal class Propertyclass
+    {
+        private int privateValue;
+        public int PrivateValue
+        {
+            get { return privateValue; } //get-accessor
+            set { privateValue = value; } //set-accessor
+        }
+            public void PrintValue()
+        {
+            Console.WriteLine("Hidden Value = " + privateValue);
+        }
+    }
+    class PropertyApp
+    {
+        public static void Main()
+        {
+            int n;
+            Propertyclass obj = new Propertyclass();
+            obj.PrivateValue = 100;
+            obj.PrintValue();
+            n=obj.PrivateValue;
+            Console.WriteLine("     value = " + n);
+        }
+    }
+    
+}
